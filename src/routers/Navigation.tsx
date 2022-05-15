@@ -14,7 +14,7 @@ export const Navigation = () => {
         
         <BrowserRouter >
             <Routes>
-                <Route path="portfolio/*" element={<Portfolio />} />
+                <Route path="portafolio-page/*" element={<Portfolio />} />
                 <Route path="/*" element={
                   <ParticlesPage >
                     <Home />
