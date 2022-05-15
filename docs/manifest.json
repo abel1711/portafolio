@@ -1,0 +1,18 @@
+{
+  "short_name": "Portfolio App",
+  "name": "Portfolio - Abel Amieva",
+  "icons": [
+    {
+      "src": "icons8-code-32.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },{
+      "src": "portfolio-96.png",
+      "sizes": "96x96 64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#fff",
+  "background_color": "#000"
+}
