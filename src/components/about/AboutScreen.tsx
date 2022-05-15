@@ -37,6 +37,7 @@ export const AboutScreen = () => {
             <li>Bootstrap</li>
             <li>Jest</li>
             <li>Workbox(PWA)</li>
+            <li>GitHub</li>
           </ul>
           <p>{ aboutMe.p4 }</p>
         </div>

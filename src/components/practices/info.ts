@@ -62,7 +62,7 @@ export const info = [
         id:'7',
         name: 'This Portfolio-App',
         img: imgPortfolioApp,
-        desc: "About this portfolio, it was created in React with the Typescript template, we use Redux to maintain the state of the application, the switches and buttons are from NextUI, it is responsive using Bootstrap breakpoints.",
+        desc: "About this portfolio, it was created in React with the Typescript template, we use Redux to maintain the state of the application, the switches, buttons, and email modal are from NextUI, it is responsive using Bootstrap breakpoints, I also created the serviceWorker with Workbox, using its BackgroundSync to be able to send the contact email even if you don't have an internet connection",
         git: 'https://github.com/abel1711/appConsolaClimaNODE'
     },
 ]
@@ -121,7 +121,7 @@ export const infoEspañol = [
         id:'7',
         name: 'Este Portfolio-App',
         img: imgPortfolioApp,
-        desc: "Acerca de este portfolio, fue creado en React con el template de Typescript, usamos Redux para mantener el estado de la aplicación, los switch y botones son de NextUI, es responsive usando los breakpoints de Bootstrap.",
+        desc: "Acerca de este portfolio, fue creado en React con el template de Typescript, usamos Redux para mantener el estado de la aplicación, los switch, botones, y modal del email son de NextUI, es responsive usando los breakpoints de Bootstrap, tambien cree el serviceWorker con Workbox, utilizando su BackgroundSinc para poder enviar el email de contacto aunque no tengas conexión a internet",
         git: 'https://github.com/abel1711/appConsolaClimaNODE'
     },
 ]
