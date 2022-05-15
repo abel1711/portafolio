@@ -12,7 +12,7 @@ export const Navigation = () => {
   return (
     <div className="">
         
-        <BrowserRouter>
+        <BrowserRouter >
             <Routes>
                 <Route path="portfolio/*" element={<Portfolio />} />
                 <Route path="/*" element={
