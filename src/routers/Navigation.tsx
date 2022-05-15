@@ -14,12 +14,12 @@ export const Navigation = () => {
         
         <BrowserRouter >
             <Routes>
-                <Route path="/" element={
+                <Route path="/portafolio-page" element={
                   <ParticlesPage >
                     <Home />
                   </ParticlesPage>
                 }/>
-                <Route path="portfolio/*" element={<Portfolio />} />
+                <Route path="/portafolio-page/portfolio/*" element={<Portfolio />} />
             </Routes>
         </BrowserRouter>
     </div>

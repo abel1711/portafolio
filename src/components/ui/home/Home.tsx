@@ -24,7 +24,7 @@ import { SwitchConfig } from '../../switchConfig/SwitchConfig';
   
 
   const handleClick = ()=>{
-    navigate('/portfolio/about')
+    navigate('/portafolio-page/portfolio/about')
   }
 
   
