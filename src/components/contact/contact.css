@@ -1,0 +1,28 @@
+.img-contact{
+    display: block;
+    width: 100%;
+}
+
+.container-contact{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+.container-img-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px ) {
+    .img-contact{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 768px ) {
+    .img-contact{
+        width: 30%;
+    }
+    
+}

@@ -1,0 +1,9 @@
+export {default as logoReact} from './1200px1200-React.svg.png';
+export {default as logoNode} from './1280px-Node.js_logo.svg.png';
+export {default as logoCss} from './1452px-CSS3_logo_and_wordmark.svg.png';
+export {default as logoHTML} from './480px-HTML5_logo_and_wordmark.svg.png';
+export {default as logoBootstrap} from './Bootstrap_logo.svg.png';
+export {default as logoJavascript} from './JavaScript-logo.png';
+export {default as logoNodeJs} from './kisspng-node-js-javascript-react-logo-express-js-javascript-logo-5b4ca5c70f0195.6239386615317498310615.png';
+export {default as logoRedux} from './react-redux-logoPNG.png';
+export {default as logoTypescript} from './Typescript_logo_2020.svg.png';
