@@ -122,7 +122,7 @@ export const infoEspañol = [
         name: 'Este Portfolio-App',
         img: imgPortfolioApp,
         desc: "Acerca de este portfolio, fue creado en React con el template de Typescript, usamos Redux para mantener el estado de la aplicación, los switch, botones, y modal del email son de NextUI, es responsive usando los breakpoints de Bootstrap, tambien cree el serviceWorker con Workbox, utilizando su BackgroundSinc para poder enviar el email de contacto aunque no tengas conexión a internet",
-        url: 'https://bit.ly/portafolio-abel-amieva',
+        url: 'https://bit.ly/my-portfolio-abel-amieva',
         git: 'https://bit.ly/github-portafolio-abel-amieva'
     },
 ]
