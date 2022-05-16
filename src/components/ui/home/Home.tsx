@@ -1,6 +1,6 @@
 import { Button } from '@nextui-org/react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import profileImg from '../../../images/profile-abel.jpg';
 import { ArrowDownIcon } from '../../icons/ArrowDownIcon';
@@ -24,7 +24,7 @@ import { SwitchConfig } from '../../switchConfig/SwitchConfig';
   
 
   const handleClick = ()=>{
-    navigate('about')
+    navigate('portfolio');
   }
 
   
@@ -65,7 +65,7 @@ import { SwitchConfig } from '../../switchConfig/SwitchConfig';
           </span>
        </div>
        
-        <Button 
+        {/* <Button 
           className='btn-init' 
           auto
           light
@@ -76,7 +76,11 @@ import { SwitchConfig } from '../../switchConfig/SwitchConfig';
           onPress={ handleClick }
           size='sm'
         >  
-        </Button>
+        </Button> */}
+
+        <Link to={'portafolio/about'} className='btn-init'>
+          <ArrowDownIcon size={30} filled fill={colors.text}/>
+        </Link>
       <div className='container-switch-theme'>
       <SwitchConfig />
       </div>

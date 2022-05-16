@@ -2,12 +2,18 @@ import Particles from "react-tsparticles";
 import type { Engine, Container } from 'tsparticles-engine';
 import { loadFull } from "tsparticles";
 import { useSelectTheme } from "../../hooks/useSelectTheme";
+import { useLocation } from "react-router-dom";
 
 interface Props{
   children?: JSX.Element | JSX.Element[]
 }
 
 export const ParticlesPage = ({children}:Props) => {
+
+  const location = useLocation();
+
+  console.log( location );
+
 
   const particlesInit = async ( main: Engine ) => {
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets

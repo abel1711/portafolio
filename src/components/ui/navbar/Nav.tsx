@@ -30,7 +30,7 @@ export const Navbar = () => {
             <SwitchConfig />
             <div className={`collapse navbar-collapse navbar-items ${show ? 'show': ''}`} id="navbarNav" onClick={handleClick}>
               <ul className="navbar-nav" >
-                <NavLink to={''} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
+                <NavLink to={'/'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
                   {navbar.link1}
                 </NavLink>
                 <NavLink to={'about'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
