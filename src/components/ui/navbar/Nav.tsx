@@ -18,7 +18,7 @@ export const Navbar = () => {
   return (
       <div>
         <nav 
-          className="navbar navbar-expand-lg navbar-dark"
+          className="navbar navbar-expand-md navbar-dark"
           style={{
             backgroundColor: colors.shadowColor
           }}
@@ -30,16 +30,16 @@ export const Navbar = () => {
             <SwitchConfig />
             <div className={`collapse navbar-collapse navbar-items ${show ? 'show': ''}`} id="navbarNav" onClick={handleClick}>
               <ul className="navbar-nav" >
-                <NavLink to={'/'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
+                <NavLink to={'/'} className={ ({isActive})=>{ return `nav-item m-2 ${isActive ? 'active': ''}`}}>
                   {navbar.link1}
                 </NavLink>
-                <NavLink to={'about'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
+                <NavLink to={'about'} className={ ({isActive})=>{ return `nav-item m-2 ${isActive ? 'active': ''}`}}>
                 {navbar.link2}
                 </NavLink>
-                <NavLink to={'practices'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
+                <NavLink to={'practices'} className={ ({isActive})=>{ return `nav-item m-2 ${isActive ? 'active': ''}`}}>
                 {navbar.link3}
                 </NavLink>
-                <NavLink to={'contact'} className={ ({isActive})=>{ return `nav-item ${isActive ? 'active': ''}`}}>
+                <NavLink to={'contact'} className={ ({isActive})=>{ return `nav-item m-2 ${isActive ? 'active': ''}`}}>
                 {navbar.link4}
                 </NavLink>
               </ul>

@@ -12,8 +12,9 @@ export const PracticesScreen = () => {
   const { lenguaje: { isEnglish, practices } } = useSelectLenguaje();
 
   const knowledge = (isEnglish)? info : infoEspañol;
+
   
-  return (
+return (
     <div 
       className='container'
       style={{
@@ -30,11 +31,11 @@ export const PracticesScreen = () => {
         <ul>
           {
             knowledge.map( ({ id, name }) => (
-              <li className='practice-li' key={id} data-bs-toggle="modal" data-bs-target={`#staticBackdrop${id}`}>{name}</li>
+              <li className='practice-li' key={id} data-bs-toggle="modal" data-bs-target={`#staticBackdrop${id}`} ><strong className="icon-li">👉</strong> {name}</li>
             ))
           }
         </ul>
-        <p>{ practices.p2 }<a href="https://github.com/abel1711" rel="noreferrer" target={'_blank'}>GitHub page</a></p>
+        <p>{ practices.p2 }<a href="https://github.com/abel1711" rel="noreferrer" target={'_blank'}>GitHub page</a> o <a href="https://docs.google.com/document/d/1iE1NdRGD2nCXrsFKbmKESUOUWp6DLUmIBaJo-rsYsYY/edit?usp=sharing" rel="noreferrer" target={'_blank'}>CV</a></p>
       </div>
 
       <div>

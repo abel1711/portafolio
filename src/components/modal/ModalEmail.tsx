@@ -27,17 +27,18 @@ export const ModalEmail = ( {open, onClose }: ModalProps) => {
         blur
         scroll
         css={{
-            backgroundColor: colors.shadowColor,
-            color: colors.text,
+            backgroundColor:'#fff',
+            color: '#000',
         }}
     >
         <Modal.Header>
-            <Text id="modal-title" size={18} css={{ color: colors.text }}>
+            <h1>{modalEmail.title1+' '+modalEmail.title2}</h1>
+            {/* <Text id="modal-title" size={18} css={{ color: colors.text }}>
             {modalEmail.title1 + ' '}
             <Text b size={18} css={{ color: colors.text }}>
                 {modalEmail.title2}
             </Text>
-            </Text>
+            </Text> */}
         </Modal.Header>
         <Modal.Body>
             <FormContactEmail onClose={handleClose}/>

@@ -37,7 +37,11 @@ export const lenguajeIN: Lenguaje ={
             msgOk: 'Email sent successfully',
             msgErr: 'Something went wrong',
             msgSW: 'We will send your Email when you have connection'
-        }
+        },
+        changeIN:'You changed to ENGLISH',
+        changeES:'Cambiaste a ESPAÑOL',
+        selectDark:'You selected DARK',
+        selectLight: 'You selected LIGHT'
 };
 export const lenguajeES: Lenguaje = {
         isEnglish: false,
@@ -76,5 +80,9 @@ export const lenguajeES: Lenguaje = {
             msgOk: 'Email enviado exitosamente',
             msgErr: 'Algo salio mal',
             msgSW: 'Enviaremos tu Email cuando tengas conexión'
-        }
+        },
+        changeES:'Cambiaste a ESPAÑOL',
+        changeIN:'You changed to ENGLISH',
+        selectDark:'Selecionaste DARK',
+        selectLight: 'Selecionaste LIGHT'
 }

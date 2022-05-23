@@ -17,7 +17,7 @@ export const Modal = ({ desc, img, name, url, id, git }:Props) => {
 
   return (
     <div>
-        <div className="modal fade" id={`staticBackdrop${id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal fade" id={`staticBackdrop${id}`}  data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered">
             <div className="modal-content">
                 <div className="modal-header">
@@ -36,7 +36,7 @@ export const Modal = ({ desc, img, name, url, id, git }:Props) => {
                         url && <button className='btn btn-primary '><a href={url} className='text-white' rel="noreferrer" target='_blank'>{ isEnglish ? 'Visit page': 'Visitar'}</a></button>
                     }
                     
-                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">{ isEnglish ? 'Close': 'Cerrar'}</button>
+                    {/* <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">{ isEnglish ? 'Close': 'Cerrar'}</button> */}
                 </div>
             </div>
             </div>

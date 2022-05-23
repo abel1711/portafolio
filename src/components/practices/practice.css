@@ -1,4 +1,37 @@
 .practice-li:hover{
     cursor: pointer;
     color: rgb(179, 179, 179);
+    font-size: 30px;
 }
+.practice-li{
+    transition: all 0.5s;
+    list-style: none;
+}
+.icon-li{
+    animation: click 2s ease 0s infinite alternate forwards;
+    display: inline-block;
+}
+
+@keyframes click {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

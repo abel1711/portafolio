@@ -1,4 +1,3 @@
-import { string } from "yup";
 
 export interface Lenguaje {
     isEnglish: boolean;
@@ -7,6 +6,10 @@ export interface Lenguaje {
     aboutMe:   AboutMe;
     practices: Practices;
     modalEmail: ModalEmail;
+    changeES: string;
+    changeIN: string;
+    selectDark: string;
+    selectLight: string;
 }
 
 export interface AboutMe {

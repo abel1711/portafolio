@@ -16,7 +16,7 @@ export const light = {
     colors:{
       background: '#E8F9FD',
       text: '#000',
-      particlesColor: ['#79DAE8', '#0AA1DD', '#2155CD'],
+      particlesColor: ['#2155CD', '#0AA1DD', '#79DAE8'],
       shadowColor: '#474fa6c9',
       linkColor: '#000',
       navLinkColor:'#2155CD'

@@ -16,8 +16,8 @@ export const SwitchLenguaje = () => {
         squared
         size={'md'}
         color='primary'
-        iconOff={<EN />}
-        iconOn={<ES />}
+        iconOn={<EN />}
+        iconOff={<ES />}
         onChange={e=>{ changeLenguaje( e.target.checked ) }}
         borderWeight={'light'}
       />

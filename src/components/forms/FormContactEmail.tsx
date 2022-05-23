@@ -1,6 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from 'yup';
 import { useSelectLenguaje, useSelectTheme, useSendEmails } from "../../hooks";
+import './formContactEmail.css';
 
 interface Props{
      onClose: ()=> void
@@ -14,7 +15,7 @@ export const FormContactEmail = ({ onClose }: Props) => {
     
 
   return (
-    <div>
+    <>
         <Formik
             initialValues={{
                 name: '',
@@ -40,7 +41,7 @@ export const FormContactEmail = ({ onClose }: Props) => {
         >
         {
             () =>(
-                    <Form >
+                    <Form className="container-form">
 
                         <label htmlFor="name" className="form-label">{modalEmail.label1}</label>
                         <Field name='name' className='form-control' />
@@ -60,6 +61,6 @@ export const FormContactEmail = ({ onClose }: Props) => {
                     </Form>
             )
         } 
-        </Formik></div>
+        </Formik></>
   )
 }

@@ -1,7 +1,7 @@
 
 .navbar-items{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .nav-item{
     margin-left: 20px;
@@ -15,4 +15,11 @@
 .nav-item:hover{
     color: white;
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-items{
+        justify-content: flex-end;
+    }
+    
 }

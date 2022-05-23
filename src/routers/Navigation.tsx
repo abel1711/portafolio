@@ -1,7 +1,8 @@
+import { AnimatePresence } from "framer-motion";
 import {
-    BrowserRouter,
     Routes,
     Route,
+    useLocation,
   } from "react-router-dom";
 import { AboutScreen } from "../components/about/AboutScreen";
 import { ContactScreen } from "../components/contact/ContactScreen";
@@ -11,11 +12,12 @@ import { PracticesScreen } from "../components/practices/PracticesScreen";
 import Home from "../components/ui/home/Home";
 
 export const Navigation = () => {
-
+  const location = useLocation();
   return (
-    <>
-        <BrowserRouter >
-            <Routes>
+    <>  
+    <AnimatePresence exitBeforeEnter>
+
+            <Routes key={location.pathname} location={location}>
                 <Route path="/" element={
                   <ParticlesPage >
                     <Home />
@@ -29,7 +31,7 @@ export const Navigation = () => {
                 </Route>
                 <Route path="*" element={<h1>NOT FOUND</h1>}/>
             </Routes>
-        </BrowserRouter>
+    </AnimatePresence>
     </>
   )
 }

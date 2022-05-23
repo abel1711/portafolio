@@ -26,22 +26,6 @@ registerRoute(
     new CacheFirst()
 )
 
-// registerRoute(
-//     new RegExp('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'),
-//     new CacheFirst()
-// );
-// registerRoute(
-//     new RegExp('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css'),
-//     new CacheFirst()
-// );
-// registerRoute(
-//     new RegExp('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'),
-//     new CacheFirst()
-// );
-// registerRoute(
-//     new RegExp('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'),
-//     new CacheFirst()
-// );
 
 // posteo de email offline
 
@@ -49,8 +33,22 @@ const backgroundSyncPlugin = new BackgroundSyncPlugin('emails',{
     maxRetentionTime: 60 * 48
 });
 
+// registerRoute(
+//     new RegExp('https://api.emailjs.com/api/v1.0/email/send'),
+//     new NetworkOnly({
+//         plugins:[backgroundSyncPlugin]
+//     }),
+//     'POST'
+// );
+
 registerRoute(
-    new RegExp('https://api.emailjs.com/api/v1.0/email/send'),
+    ({request, url})=>{
+        if( 'https://api.emailjs.com/api/v1.0/email/send' == url.href ){
+            console.log('se registro')
+            return true
+        }
+        return false
+    },
     new NetworkOnly({
         plugins:[backgroundSyncPlugin]
     }),
