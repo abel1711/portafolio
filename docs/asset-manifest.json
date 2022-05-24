@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.783c7791.css",
-    "main.js": "/static/js/main.1ec152bf.js",
+    "main.js": "/static/js/main.977d36a6.js",
     "static/js/937.659100b1.chunk.js": "/static/js/937.659100b1.chunk.js",
     "static/media/profile-abel.jpg": "/static/media/profile-abel.01deecc6d1c83566b85d.jpg",
     "static/media/captura-map-app.jpg": "/static/media/captura-map-app.222d8992d4749561eb8f.jpg",
@@ -26,11 +26,11 @@
     "index.html": "/index.html",
     "static/media/Octicons-mark-github.svg": "/static/media/Octicons-mark-github.50b995ed6606464b4f1d9976934fc66e.svg",
     "main.783c7791.css.map": "/static/css/main.783c7791.css.map",
-    "main.1ec152bf.js.map": "/static/js/main.1ec152bf.js.map",
+    "main.977d36a6.js.map": "/static/js/main.977d36a6.js.map",
     "937.659100b1.chunk.js.map": "/static/js/937.659100b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.783c7791.css",
-    "static/js/main.1ec152bf.js"
+    "static/js/main.977d36a6.js"
   ]
 }
